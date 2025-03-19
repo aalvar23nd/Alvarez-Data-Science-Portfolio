@@ -44,11 +44,12 @@ plt.show() # Displays visualization
 
 sns.barplot(data = df_olympics_melted, # Data
              x = "Sex", # Pulls data from the "Sex" column
-             y = "Medal", # Pulls data from the "Medal" column
+             y = "Sport", # Pulls data from the "Sport" column
              hue = "Medal") # Displays different colors by type of medal
 plt.title("Count of Medals Earned, by Type and Sex, in the '08 Olympics") # Title
 plt.xlabel("Sex") # X-axis label
-plt.ylabel("Medal") # Y-axis label
+plt.ylabel("Count") # Y-axis label
+plt.yticks([]) # Removes y-axes ticks
 plt.show() # Displays the visualization
 
 # Pivot-Table
