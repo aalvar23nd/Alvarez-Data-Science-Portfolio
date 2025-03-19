@@ -9,6 +9,24 @@
 
 ## Instructions
 
+```
+# Cloning
+
+git clone https://github.com/aalvar23nd/tidydata-project
+
+# Repository
+
+cd tidydata-project
+
+# Install Dependencies
+
+pip install pandas seaborn matplotlib.pyplot
+
+# Run
+
+python main.py
+
+```
 
 
 
