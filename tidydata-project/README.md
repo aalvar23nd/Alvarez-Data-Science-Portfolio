@@ -42,7 +42,10 @@ python main.py
 #### - A display of the original dataset
 #### - A tidy version of the dataset after proper cleaning functions are applied
 #### - Two visualizations:
-##### - A count of medals earned by type: ![Figure_1](https://github.com/user-attachments/assets/7b921617-f245-43d1-9960-6e5e61307974)
-##### - A count of medals earned by type and sex: ![Figure_2](https://github.com/user-attachments/assets/4b3e4d3c-668c-4fa7-afe3-749a5fad67ba)
+##### - A count of medals earned by type: <br> 
+![Figure_1](https://github.com/user-attachments/assets/7b921617-f245-43d1-9960-6e5e61307974)
+##### - A count of medals earned by type and sex: <br>
+![Figure_3](https://github.com/user-attachments/assets/323d0aa7-6f1d-422c-8e34-0e538edaf072)
+
 
 
