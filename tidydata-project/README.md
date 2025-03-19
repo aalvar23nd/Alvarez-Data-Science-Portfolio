@@ -27,13 +27,22 @@ pip install pandas seaborn matplotlib.pyplot
 python main.py
 
 ```
+## Dataset Desription
+### This dataset is adapted from https://edjnet.github.io/OlympicsGoNUTS/2008/. The dataset shows all medalists from the 2008 Summer Olympics. The specific columns utilized in my adapted dataset are the medalist's name, their sex, and what sport they competed and won a medal in. 
+
+## References
+### For further reading on:
+#### Data Wranging in Pandas: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+#### Tidy Data Principles: https://vita.had.co.nz/papers/tidy-data.pdf 
+##### - Citation:
+#####   - Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10
+
+## Expected Outputs
+### After running the script, the expected outputs are:<br>
+#### - A display of the original dataset
+#### - A tidy version of the dataset after proper cleaning functions are applied
+#### - Two visualizations:
+##### - A count of medals earned by type: ![Figure_1](https://github.com/user-attachments/assets/7b921617-f245-43d1-9960-6e5e61307974)
+##### - A count of medals earned by type and sex: ![Figure_2](https://github.com/user-attachments/assets/4b3e4d3c-668c-4fa7-afe3-749a5fad67ba)
 
 
-
-
-
-
-
-
-## Citation:
-Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10
