@@ -5,7 +5,7 @@
 1. Each variable forms a column. 
 2. Each observation forms a row.
 3. Each type of observational unit forms a table. (Wickham, 2014)<br>
-### These principles are designed to create an universal language of sorts that allows data to become meaningfully structured so that it is easily used and understood by various software platforms. Some of main tasks in this project include melting to convert the dataset's orignial wide format to long format as well as splitting columns to ensure multiple variables are not present within one column. By undergoing these processes, the '08 Olympic Medalists dataset becomes much easier to use and extract insights from.
+### These principles are designed to create an universal language of sorts that allows data to become meaningfully structured so that it is easily used and understood by various software platforms. Some of the main tasks in this project include melting to convert the dataset's original wide format to long format as well as splitting columns to ensure multiple variables are not present within one column. By undergoing these processes, the '08 Olympic Medalists dataset becomes much easier to use and extract insights from.
 
 ## Instructions
 
