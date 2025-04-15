@@ -51,8 +51,13 @@ test_size = st.sidebar.slider("Test size (percentage %)", 10, 50, 20, step = 5)
 random_state = st.sidebar.number_input("Random State")
 
 # split data
+st.write("Dropping rows with missing values from X...")
 X = X.dropna()
-y = y[X.index] 
+y = y[X.index]  # Make sure y corresponds to the rows remaining in X
+
+# Check if X and y have the same number of rows after dropping
+st.write(f"Rows in X: {X.shape[0]}")
+st.write(f"Rows in y: {y.shape[0]}")
 
 X_train, X_test, y_train, y_test = train_test_split(X, y,
                                                     test_size = test_size / 100,
