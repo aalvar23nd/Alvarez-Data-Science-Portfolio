@@ -19,11 +19,11 @@ Users can:<br>
 ```
 # Cloning
 
-git clone https://github.com/aalvar23nd/MLStreamlitApp
+git clone https://github.com/aalvar23nd/MLStrealitApp
 
 # Repository
 
-cd MLStreamLitApp
+cd MLStreaLitApp
 
 # Install Dependencies
 
