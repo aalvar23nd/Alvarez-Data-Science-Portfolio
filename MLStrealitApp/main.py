@@ -24,7 +24,9 @@ y = pd.Series(housing.target, name = 'med_house_value')
 
 # user upload
 if dataset_choice == "California Housing":
-    X, y = load_california_data()
+    housing = fetch_california_housing()
+    X = pd.DataFrame(housing.data, columns=housing.feature_names)
+    y = pd.Series(housing.target, name='med_house_value')
 else:
     uploaded_file = st.sidebar.file_uploader("Upload CSV", type = ["csv"])
     if uploaded_file:
