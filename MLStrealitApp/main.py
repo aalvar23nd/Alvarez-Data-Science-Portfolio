@@ -74,6 +74,14 @@ st.write(f"X_train shape: {X_train.shape}")
 st.write(f"X_test shape: {X_test.shape}")
 st.write(f"y_train shape: {y_train.shape}")
 st.write(f"y_test shape: {y_test.shape}")
+
+X = np.array(X)  # Ensure X is a numpy array (2D)
+y = np.array(y).reshape(-1,)
+
+st.write(f"Missing values in X: {np.isnan(X).sum()}")
+st.write(f"Missing values in y: {np.isnan(y).sum()}")
+
+
 # fit model
 model = LinearRegression()
 model.fit(X_train, y_train)
