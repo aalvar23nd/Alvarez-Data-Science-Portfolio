@@ -51,36 +51,24 @@ test_size = st.sidebar.slider("Test size (percentage %)", 10, 50, 20, step = 5)
 random_state = st.sidebar.number_input("Random State")
 
 # split data
-# Verify shapes of X and y
-st.write(f"X shape: {X.shape}")
-st.write(f"y shape: {y.shape}")
+# Ensure X and y are correct and consistent
+X = np.array(X)
+y = np.array(y).flatten()  # Flatten y to make sure it's 1D
 
-# Check for missing values
-st.write("Checking for missing values in X and y...")
-st.write(f"Missing values in X: {X.isnull().sum().sum()}")
-st.write(f"Missing values in y: {y.isnull().sum().sum()}")
+# Check the shapes and types
+st.write(f"X type: {type(X)}, X shape: {X.shape}")
+st.write(f"y type: {type(y)}, y shape: {y.shape}")
 
-# Ensure X is a DataFrame and y is a Series
-X = pd.DataFrame(X)  # Ensure X is a DataFrame
-y = pd.Series(y)     # Ensure y is a Series
+# Check for NaN or infinite values
+if np.any(np.isnan(X)) or np.any(np.isnan(y)):
+    st.error("Data contains NaN values!")
+if np.any(np.isinf(X)) or np.any(np.isinf(y)):
+    st.error("Data contains infinite values!")
 
 # Now split the data
 X_train, X_test, y_train, y_test = train_test_split(X, y,
                                                     test_size=test_size / 100,
                                                     random_state=random_state)
-
-# Check the shapes of the splits
-st.write(f"X_train shape: {X_train.shape}")
-st.write(f"X_test shape: {X_test.shape}")
-st.write(f"y_train shape: {y_train.shape}")
-st.write(f"y_test shape: {y_test.shape}")
-
-X = np.array(X)  # Ensure X is a numpy array (2D)
-y = np.array(y).reshape(-1,)
-
-st.write(f"Missing values in X: {np.isnan(X).sum()}")
-st.write(f"Missing values in y: {np.isnan(y).sum()}")
-
 
 # fit model
 model = LinearRegression()
