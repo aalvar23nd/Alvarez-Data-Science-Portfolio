@@ -51,23 +51,8 @@ test_size = st.sidebar.slider("Test size (percentage %)", 10, 50, 20, step = 5)
 random_state = st.sidebar.number_input("Random State")
 
 # split data
-# Ensure X and y are correct and consistent
-X = np.array(X)
-y = np.array(y).flatten()  # Flatten y to make sure it's 1D
-
-# Check the shapes and types
-st.write(f"X type: {type(X)}, X shape: {X.shape}")
-st.write(f"y type: {type(y)}, y shape: {y.shape}")
-
-# Check for NaN or infinite values
-if np.any(np.isnan(X)) or np.any(np.isnan(y)):
-    st.error("Data contains NaN values!")
-if np.any(np.isinf(X)) or np.any(np.isinf(y)):
-    st.error("Data contains infinite values!")
-
-# Now split the data
 X_train, X_test, y_train, y_test = train_test_split(X, y,
-                                                    test_size=test_size / 100)
+                                                    test_size = test_size / 100,
 
 # fit model
 model = LinearRegression()
