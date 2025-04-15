@@ -51,7 +51,5 @@ streamlit run main.py
 ##### - R2 Score
 ##### - Mean Absolute Error
 #### - Two visualizations:
-##### - Predictions vs Actual Values: <br> 
-![Figure_1](https://github.com/user-attachments/assets/7b921617-f245-43d1-9960-6e5e61307974)
-##### - A count of medals earned by type and sex: <br>
-![Figure_3](https://github.com/user-attachments/assets/323d0aa7-6f1d-422c-8e34-0e538edaf072)
+##### - Predictions vs Actual Values
+##### - Residuals Plot
