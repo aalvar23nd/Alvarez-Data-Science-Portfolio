@@ -52,7 +52,7 @@ random_state = st.sidebar.number_input("Random State")
 
 # split data
 X_train, X_test, y_train, y_test = train_test_split(X, y,
-                                                    test_size = test_size / 100,
+                                                    test_size = test_size / 100)
 
 # fit model
 model = LinearRegression()
