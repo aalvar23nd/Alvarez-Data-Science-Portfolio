@@ -47,7 +47,7 @@ random_state = st.sidebar.number_input("Random State") # allows for reproduction
 
 # split data
 X_train, X_test, y_train, y_test = train_test_split(X, y,
-                                                    test_size = test_size / 100, random_state = int(random_state)) # splits the data into training and testing sets and adjusts test size from percentage to decimal
+                                                    test_size = test_size / 100, random_state = int(random_state)) # splits the data into training and testing sets and adjusts test size from percentage to decimal and inputs user chosen random state
 
 # fit model
 model = LinearRegression()
