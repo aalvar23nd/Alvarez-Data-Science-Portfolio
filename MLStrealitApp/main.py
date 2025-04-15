@@ -51,9 +51,8 @@ test_size = st.sidebar.slider("Test size (percentage %)", 10, 50, 20, step = 5)
 random_state = st.sidebar.number_input("Random State")
 
 # split data
-st.write("Checking for missing values in X and y...")
-st.write("Missing values in X: ", X.isna().sum())
-st.write("Missing values in y: ", y.isna().sum())
+X = X.dropna()
+y = y[X.index] 
 
 X_train, X_test, y_train, y_test = train_test_split(X, y,
                                                     test_size = test_size / 100,
