@@ -1,7 +1,7 @@
-# Lessons in Machine Learning Applications: <br> A Streamlit App to Train a Supervised Machine Learning Model <br> (Linear Regression)
+# Lessons in Supervised Machine Learning Applications: <br> A Streamlit App to Train a Supervised Machine Learning Model <br> (Linear Regression)
 
 ## Project Overview
-### "Lessons in Machine Learning Applications" is a streamlit app that allows users to explore linear regression. 
+### "Lessons in Supervised Machine Learning Applications" is a streamlit app that allows users to explore linear regression. 
 Users can:<br>
 1. Upload their own dataset (csv file)
   <br>or
