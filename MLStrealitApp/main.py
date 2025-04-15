@@ -51,6 +51,9 @@ test_size = st.sidebar.slider("Test size (percentage %)", 10, 50, 20, step = 5)
 random_state = st.sidebar.number_input("Random State")
 
 # split data
+st.write(f"X shape: {X.shape}")
+st.write(f"y shape: {y.shape}")
+
 X_train, X_test, y_train, y_test = train_test_split(X, y,
                                                     test_size = test_size / 100,
                                                     random_state = random_state)
