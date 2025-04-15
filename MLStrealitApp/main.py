@@ -18,11 +18,10 @@ st.sidebar.header("Data Options: Please choose one")
 dataset_choice = st.sidebar.selectbox("Chooose a dataset", ("California Housing", "Student Performance", "Upload your own"))
 
 # california dataset
-def load_california_data():
-    data = fetch_california_housing()
-    X = pd.DataFrame(data.data, columns = data.feature_names)
-    y = pd.Series(data.target, name = "MedHouseVal")
-    return X, y
+housing = fetch_california_housing()
+X = pd.DataFrame(housing.data, columns = housing.feature_names)
+y = pd.Series(housing.target, name = 'med_house_value')
+return X, y
 
 # user upload
 if dataset_choice == "California Housing":
