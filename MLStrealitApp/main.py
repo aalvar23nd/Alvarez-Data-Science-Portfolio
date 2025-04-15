@@ -67,8 +67,7 @@ if np.any(np.isinf(X)) or np.any(np.isinf(y)):
 
 # Now split the data
 X_train, X_test, y_train, y_test = train_test_split(X, y,
-                                                    test_size=test_size / 100,
-                                                    random_state=random_state)
+                                                    test_size=test_size / 100)
 
 # fit model
 model = LinearRegression()
