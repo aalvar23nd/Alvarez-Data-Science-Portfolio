@@ -15,7 +15,7 @@ st.write("Hello there! This app lets you explore a linear regression supervised 
 
 # sidebar
 st.sidebar.header("Data Options: Please choose one")
-dataset_choice = st.sidebar.selectbox("Chooose a dataset", ("California Housing", "Student Performance", "Upload your own"))
+dataset_choice = st.sidebar.selectbox("Chooose a dataset", ("California Housing", "Upload your own"))
 
 # california dataset
 housing = fetch_california_housing()
