@@ -21,7 +21,6 @@ dataset_choice = st.sidebar.selectbox("Chooose a dataset", ("California Housing"
 housing = fetch_california_housing()
 X = pd.DataFrame(housing.data, columns = housing.feature_names)
 y = pd.Series(housing.target, name = 'med_house_value')
-return X, y
 
 # user upload
 if dataset_choice == "California Housing":
