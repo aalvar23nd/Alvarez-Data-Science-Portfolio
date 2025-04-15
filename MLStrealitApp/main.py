@@ -51,18 +51,29 @@ test_size = st.sidebar.slider("Test size (percentage %)", 10, 50, 20, step = 5)
 random_state = st.sidebar.number_input("Random State")
 
 # split data
-st.write("Dropping rows with missing values from X...")
-X = X.dropna()
-y = y[X.index]  # Make sure y corresponds to the rows remaining in X
+# Verify shapes of X and y
+st.write(f"X shape: {X.shape}")
+st.write(f"y shape: {y.shape}")
 
-# Check if X and y have the same number of rows after dropping
-st.write(f"Rows in X: {X.shape[0]}")
-st.write(f"Rows in y: {y.shape[0]}")
+# Check for missing values
+st.write("Checking for missing values in X and y...")
+st.write(f"Missing values in X: {X.isnull().sum().sum()}")
+st.write(f"Missing values in y: {y.isnull().sum().sum()}")
 
+# Ensure X is a DataFrame and y is a Series
+X = pd.DataFrame(X)  # Ensure X is a DataFrame
+y = pd.Series(y)     # Ensure y is a Series
+
+# Now split the data
 X_train, X_test, y_train, y_test = train_test_split(X, y,
-                                                    test_size = test_size / 100,
-                                                    random_state = random_state)
+                                                    test_size=test_size / 100,
+                                                    random_state=random_state)
 
+# Check the shapes of the splits
+st.write(f"X_train shape: {X_train.shape}")
+st.write(f"X_test shape: {X_test.shape}")
+st.write(f"y_train shape: {y_train.shape}")
+st.write(f"y_test shape: {y_test.shape}")
 # fit model
 model = LinearRegression()
 model.fit(X_train, y_train)
