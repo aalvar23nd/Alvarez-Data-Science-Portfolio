@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # title
-st.title("Unsupervised Machine Learning: Clustering Exploration")
+st.title("Lessons in Unsupervised Machine Learning: Clustering Exploration")
 st.write("Welcome! This app allows you to explore unsupervised learning using either K-Means or Hierarchical clustering. Upload your own dataset or try a sample to get started.")
 
 # sidebar: data options
