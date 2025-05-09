@@ -51,5 +51,7 @@ streamlit run main.py
 ##### - R2 Score
 ##### - Mean Absolute Error
 #### - Two visualizations:
-##### - Predictions vs Actual Values
-##### - Residuals Plot
+##### - Predictions vs Actual Values:<br>
+![PVA](https://github.com/user-attachments/assets/20c43db3-622f-4d1c-a6cd-87af0d8d9122)
+##### - Residuals Plot:<br>
+![RP](https://github.com/user-attachments/assets/c42b3639-c54a-4ec5-b2f6-c2e8bc290c8c)
