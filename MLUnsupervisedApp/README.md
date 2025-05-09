@@ -1,4 +1,4 @@
-# Unsupervised Machine Learning: Clustering Exploration: <br> A Streamlit App to Explore K-Means and Hierarchical Clustering
+# Lessons in Unsupervised Machine Learning: Clustering Exploration: <br> A Streamlit App to Explore K-Means and Hierarchical Clustering
 
 ## Project Overview
 ### "Unsupervised Machine Learning: Clustering Exploration" is a streamlit app that allows users to explore unsupervised learning techniques through clustering. 
