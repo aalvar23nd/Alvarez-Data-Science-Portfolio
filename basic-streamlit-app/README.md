@@ -33,7 +33,7 @@ streamlit run plentyapenguins.py
 ```
 ## Dataset
 ### This dataset is adapted from https://allisonhorst.github.io/palmerpenguins/. The dataset shows information about different types of penguin species (adelie, chinstrap, and gentoo), and includes other information like island location, flipper length, body mass, sex, among others. 
-!image
+![PENGUINS](https://github.com/user-attachments/assets/2284c53a-d7e2-4ab8-96fa-57dc6037cad4)
 
 ## References
 ### For further reading on:
