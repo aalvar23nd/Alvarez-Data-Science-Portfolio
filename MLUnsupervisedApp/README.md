@@ -51,7 +51,9 @@ streamlit run main.py
 
 ## Expected Outputs
 ### After running the script, the expected outputs are:<br>
-#### PCA Scatterplot with cluster groups:![image]<br>https://github.com/user-attachments/assets/e57589b9-c9e1-49f6-ad65-2ac394324ea5
+#### PCA Scatterplot with cluster groups:<br>
+![PCA_Scatter](https://github.com/user-attachments/assets/e57589b9-c9e1-49f6-ad65-2ac394324ea5)
 #### Silhouette Score
-#### Elbow Curve for Optimal K:<br>![image]https://github.com/user-attachments/assets/9fca1e8f-ac3e-4d99-abef-ec1d2ed4d95e 
+#### Elbow Curve for Optimal K:<br>
+![EC_OK](https://github.com/user-attachments/assets/9fca1e8f-ac3e-4d99-abef-ec1d2ed4d95e) 
 #### Cluster Center Table
