@@ -9,7 +9,7 @@ st.title("Plenty'a Penguins ૮(•͈⌔•͈)ა: My First Streamlit App")
 st.subheader("Plenty'a Penguins is designed to introduce users to the 'penguins' dataset, which has information on penguins by species, sex, year, island location, and flipper length (mm), among other key variables. Plenty'a Penguins allows users to filter data by penguin species and a range of flipper lengths (which they can choose). I hope you enjoy it!")
 
 # Data
-df = pd.read_csv("data/penguins.csv")
+df = pd.read_csv("penguins.csv")
 
 # Display Data
 st.write("Here is the dataset loaded from a CSV file:")
